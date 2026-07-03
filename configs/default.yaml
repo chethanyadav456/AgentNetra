@@ -1,0 +1,25 @@
+# AgentNetra default configuration
+# All values can be overridden via environment variables (prefix: AGENTNETRA_)
+# or by placing a modified copy of this file at ~/.agentnetra/config.yaml
+
+log:
+  # Minimum log level: debug | info | warn | error
+  level: info
+
+  # Set to true for development-friendly (coloured, verbose) output
+  development: false
+
+  # Log file path. Leave empty to log only to stderr.
+  # file: ~/.agentnetra/logs/agentnetra.log
+
+database:
+  # SQLite database file path.
+  # Platform defaults are used when this key is absent.
+  # Linux:   ~/.agentnetra/agentnetra.db
+  # macOS:   ~/Library/Application Support/AgentNetra/agentnetra.db
+  # Windows: %APPDATA%/AgentNetra/agentnetra.db
+  # path: ~/.agentnetra/agentnetra.db
+
+scanner:
+  # Seconds between automatic scans. 0 = single scan only (default).
+  interval_seconds: 0
